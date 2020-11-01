@@ -3,65 +3,142 @@
 <head>
 <meta charset="utf-8">
 <style>	
-body{font-family:serif;font-size: 19px;margin: 0px!important;padding: 15px;}	
-h1{font-family: 'Playfair Display SC', serif;}		
+body{font-family:serif;margin: 0px!important;padding: 15px;}	
+h1{font-family: 'Playfair Display SC', serif;}
+.parent {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-end;
+	height: 500px; 
+	width: 800px;
+	background-color: aqua;
+}
+.parent2 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: stretch /*felx-start | flex-end | center | baseline | stretch*/;
+	height: 600px; 
+	width: 960px;
+	background-color: aqua;
+}    
+
+.child {
+	width: 200px;
+	height: 200px;
+	padding: 0px;
+	background-color: #7F7F7F;
+	
+}
+.childd {
+	width: 150px;  
+	/*height: 150px;*/
+	padding: 5px;
+	background-color: #7F7F7F;
+	
+}    
+.child2{
+    align-self: flex-start;
+} 
+	.child11{
+		order:2;
+	}
+	.child22{
+		order:3;
+		margin-left: auto;
+	}
+	.child33{
+		order:1;
+	}    
+	.yellow{
+		background: rgba(255,155,11,1.00);
+		position: absolute;
+		top:50px;
+		left:70px;
+		width: 300px;
+		height: 200px;
+		z-index: 3;
+	}
+	.purple{
+		background: rgba(250,67,255,1);
+		position: absolute;
+		top:100px;
+		left:150px;
+		width: 300px;
+		height: 200px;
+		z-index: 1;
+		
+	}
+	.green{
+		background: rgba(0,168,124,1.00);
+		position: absolute;
+		top:200px;
+		left:250px;
+		width: 300px;
+		height: 200px;
+		z-index: 2;
+	} 
+    .yellow2 {
+	background: rgba(255,155,11,1.00);
+	position: relative;
+	/*top: 50px;
+	left: 70px;*/
+	width: 500px;
+	height: 500px;
+	
+}
+.purple2 {
+	background: rgba(250,67,255,1);
+	position: absolute;
+	bottom: -50px;
+	right: -50px;
+	width: 300px;
+	height: 300px;
+	
+}
+.green2 {
+	background: rgba(0,168,124,1.00);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100px;
+	height: 100px;
+	
+}
 </style>	
 <title>محمد خاکی</title>
 </head>
 <!--///////////////////////////////////////////////////////////////////////////////////////////////////	-->	
 <body>
-<div style="background-color: #AAAAAA; text-align: center;line-height:45px">
-  این وب‌گاه نخست محمد خاکی است
-<br />
-دانشگاه کاشان
-<br />
-دانشکده برق و کامپیوتر
-<br />
-گروه مهندسی کامپیوتر
-<br />
-شماره دانشجویی ۹۵۲۱۱۷۰۲۰۴   
-</div>  
-<h1>The Website Of Internet engineering exercise:</h1>
-<h3>By Mohammad Khaki</h3>
-<h4>Chapter: test the "h4" tag</h4>
-<br>    
-<h3>P tag:</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta officia quam ipsum, vel molestias nostrum, consectetur velit. Sapiente ad voluptatum dignissimos, reiciendis voluptates minus, nam similique, commodi, nobis qui dicta. Fuga error, nulla sunt perspiciatis assumenda quidem inventore distinctio ducimus provident porro fugit enim debitis, explicabo amet quos cupiditate laudantium ipsam, expedita accusamus totam nihil sint ullam repudiandae non. Autem dolorem soluta in molestiae laudantium accusamus sapiente quae ex officiis possimus suscipit hic explicabo esse aliquid saepe, recusandae tempora at odio qui. Minus possimus, temporibus est quasi id non, similique repudiandae, iusto dignissimos ea error. Nulla facere libero quos iusto, non totam beatae accusantium molestias ut, praesentium voluptates tenetur necessitatibus dolores odit possimus hic quis explicabo illum sit, harum illo magni! Porro, quia maiores. Vero, voluptatum autem animi ipsa velit dolores quod doloribus at architecto quis reprehenderit consequuntur atque? Quas commodi earum, laboriosam natus molestias quidem nostrum saepe eaque.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi a saepe neque perferendis ut, quaerat accusantium labore id. Architecto delectus, ullam quaerat quae, magnam eius excepturi deserunt placeat expedita, explicabo natus reiciendis sed, maxime tempore sint obcaecati. Necessitatibus eligendi alias dolor rerum quod eius non itaque possimus sunt, quae nisi.</p>    
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi a saepe neque perferendis ut, quaerat accusantium labore id. Architecto delectus, ullam quaerat quae, magnam eius excepturi deserunt placeat expedita, explicabo natus reiciendis sed, maxime tempore sint obcaecati. Necessitatibus eligendi alias dolor rerum quod eius non itaque possimus sunt, quae nisi.</p>    
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi a saepe neque perferendis ut, quaerat accusantium labore id. Architecto delectus, ullam quaerat quae, magnam eius excepturi deserunt placeat expedita, explicabo natus reiciendis sed, maxime tempore sint obcaecati. Necessitatibus eligendi alias dolor rerum quod eius non itaque possimus sunt, quae nisi.</p>    
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi a saepe neque perferendis ut, quaerat accusantium labore id. Architecto delectus, ullam quaerat quae, magnam eius excepturi deserunt placeat expedita, explicabo natus reiciendis sed, maxime tempore sint obcaecati. Necessitatibus eligendi alias dolor rerum quod eius non itaque possimus sunt, quae nisi.</p>    
-<br>
-<h3>List:</h3>    
-<ul>
-  <li>milk</li>
-  <li>eggs</li>
-  <li>bread</li>
-  <li>hummus</li>
-</ul>
-<h3>Ordered list(with number):</h3>    
-<ol>
-  <li>milk</li>
-  <li>eggs</li>
-  <li>bread</li>
-  <li>hummus</li>
-</ol>
-<h3>Combine ol and ul</h3>    
-<ol>
-  <li>Remove the skin from the garlic, and chop coarsely.</li>
-  <li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>
-  <li>Add all the ingredients into a food processor.</li>
-  <li>Process all the ingredients into a paste.
-    <ul>
-      <li>If you want a coarse "chunky" hummus, process it for a short time.</li>
-      <li>If you want a smooth hummus, process it for a longer time.</li>
-    </ul>
-  </li>
-</ol>
-<br>    
-<h3>Italic and Bold and underline with em,strong,u tag:</h3>     
-<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, consequuntur.</strong>
-<br><em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, asperiores?</em>
-<br><u>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptate.</u></p>    
+<h2>Flex</h2>
+<div class="parent" style="margin: 10px">
+	<div class="child child1" >1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, quia quaerat officiis possimus consequatur vel quo, repellendus, voluptatum ipsam error quis. Voluptatibus recusandae, reiciendis adipisci error. Maxime nobis soluta iure.</div>
+	<div class="child child2">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum doloribus perspiciatis eius repellat illo saepe corrupti obcaecati iste. Dicta ullam dolore impedit, officiis provident fuga amet obcaecati laborum rerum architecto.</div>
+	<div class="child child3">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad optio, delectus harum deleniti similique cum quisquam debitis, fugit facilis porro qui? Quas nobis ipsam distinctio doloremque repellendus commodi non.</div>
+</div>
+<div class="parent2" style="margin: 10px">
+	<div class="childd child11">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, quia quaerat officiisLorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, quia quaerat officiisLorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, quia quaerat officiis </div>
+	<div class="childd child22">2 Lorem ipsum  officiis provident fuga amet obcaecati laborum rerum architecto.</div>
+	<div class="childd child33">3 Lorem ipsum  nobis ipsam distinctio doloremque repellendus commodi non.</div>
+</div> 
+<div class="parent2">
+	<div class="childd">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, quia quaerat officiisLorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, quia quaerat officiisLorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, quia quaerat officiis </div>
+	<div class="childd">2 Lorem ipsum  officiis provident fuga amet obcaecati laborum rerum architecto.</div>
+	<div class="childd">3 Lorem ipsum  nobis ipsam distinctio doloremque repellendus commodi non.</div>
+</div>
+<h2>position</h2>    
+<div class="yellow2" style="margin: 10px">
+  relative
+  <div class="purple2">
+      absolute
+    <div class="green2">absolute</div>
+  </div>
+</div>    
+<h2>Z-index</h2>
+<div style="position: relative">   
+<div class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, aperiam. Porro architecto impedit omnis harum placeat possimus eveniet praesentium nesciunt eum animi </div>
+<div class="purple"> fjd vljkfdh lkjfd lkfd lkjfdLorem ipsum dolor </div>
+<div class="green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, aperiam. Porro architecto impedit omnis harum placeat possimus eveniet praesentium </div></div>        
 </body>
 </html>
